@@ -63,13 +63,13 @@ export default function ChatBox() {
             inputBox = element;
           }}
           value={messageText}
-          placeholder="Type a message..."
+          placeholder="输入要发送的消息..."
           onChange={(e) => setMessageText(e.target.value)}
           onKeyPress={handleKeyPress}
           className={styles.textarea}
         ></textarea>
         <button type="submit" className={styles.button} disabled={messageTextIsEmpty}>
-          Send
+          发送
         </button>
       </form>
     </div>
